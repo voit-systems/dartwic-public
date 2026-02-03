@@ -28,3 +28,9 @@ DARTWIC is a monorepo, containing a few different software projects put together
 - [SDKS](/sdks): Software Development Kits for embedding functionality into DARTWIC. Includes creating additional user interface components via the ReactJS SDK (planned), or C++ device drivers via the Modules SDK.
 - [Modules](/modules): A collection of device drivers and user interface components created using the DARTWIC SDK's.
 - [Clients](/clients): Client libraries for connecting to a DARTWIC node. Planned libraires include Python, C++, and ReactJS.
+- [Demos](/demos): Examples of projects that are built using DARTWIC. TESTING_NETWORK was used to test and operate a hybrid rocket engine, with sensor alarms, operator prompts for engine autofilling and autoignition, and a mission timeline clock.
+
+# Getting Started
+To view an example project that uses DARTWIC, view the [demos](/demos) folder. The TESTING_NETWORK project is a project used by the Texas A&M Sounding Rocketry Team to gather data, visualize and control rocket systems, and automate procedures for operating and testing hybrid rocket engines.
+
+To view examples of custom drivers built for DARTWIC, view the [modules](/modules) folder. There, you can find a ModBus client module to connect to ModBus devices, with more drivers in the works.
