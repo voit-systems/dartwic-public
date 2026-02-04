@@ -18,19 +18,21 @@ DARTWIC was initially created to gather realtime data from hybrid rocket engines
 <img width="2559" height="1439" alt="newdartwicui" src="https://github.com/user-attachments/assets/deb3e2ea-2e06-4c8d-9b35-b5d617a0d471" />
 
 
-# Architecture
+# Current Architecture
 DARTWIC is a monorepo, containing a few different software projects put together, to create the unified controls and data acquisition platform.
-- [Engine](/releases/engines): The main project that combines RAPID, CAESAR, and TEMPEST, to create a unified controls and data acquisition platform.
-- [Interface](releases/interfaces): The user-interface that is used to interact with DARTWIC. Written in ReactJS. Contains a frontend webserver UI, and an desktop app that is built using Electron.
-- **RAPID**: Real-time Access Parallel In-memory Database. A database that is highly preformant in multi-threaded environments, focused around data aquisition, automation, and control aplications. DARTWIC uses this to store data and commands called "channels", directly in memory for fastests realtime access, and records historical data to disk.
+- [Engine & Interface](/releases): The main project that combines RAPID, and CAESAR, to create a unified controls and data acquisition platform. Also includes a webserver that runs a user interface that is used to interact with DARTWIC. Written in ReactJS.
+- **RAPID**: Real-time Access Parallel In-memory Database. A database that is highly preformant in multi-threaded environments, focused around data aquisition, automation, and control aplications. DARTWIC uses this to store data and commands called "channels", directly in memory for fastests realtime access, and records historical data to disk via an InfluxDB server.
 - **CAESAR**: Command Authority Engine for Sensitive Automated Resources. Commanding engine for DARTWIC. This contains the threaded loops that users can create in DARTWIC, and will also later implement command authority triplication by allowing multiple RAPID or DARTWIC nodes to be triplicaited, and voting on the final command in the threaded loops.
-- **TEMPEST**: Transaction &amp; Event Messaging Platform for Encrypted System Telemetry. A message router that routes all data and commands to and from DARTWIC node. Client libraries, TAARS, and the interface app will use this to connect to a DARTWIC node.
-- [SDKS](/sdks): Software Development Kits for embedding functionality into DARTWIC. Includes creating additional user interface components via the ReactJS SDK (planned), or C++ device drivers via the Modules SDK.
-- [Modules](/modules): A collection of device drivers and user interface components created using the DARTWIC SDK's.
-- [Clients](/clients): Client libraries for connecting to a DARTWIC node. Planned libraires include Python, C++, and ReactJS.
+- [SDKS](/sdks): Software Development Kits for embedding functionality into DARTWIC. Includes creating C++ device drivers via the Modules SDK.
+- [Modules](/modules): A collection of device drivers created using the DARTWIC SDK's.
 - [Demos](/demos): Examples of projects that are built using DARTWIC. TESTING_NETWORK was used to test and operate a hybrid rocket engine, with sensor alarms, operator prompts for engine autofilling and autoignition, and a mission timeline clock.
 
 # Getting Started
+All DARTWIC engine releases contain an autofill software-in-the-loop simulation example.
+
 To view an example project that uses DARTWIC, view the [demos](/demos) folder. The TESTING_NETWORK project is a project used by the Texas A&M Sounding Rocketry Team to gather data, visualize and control rocket systems, and automate procedures for operating and testing hybrid rocket engines.
 
 To view examples of custom drivers built for DARTWIC, view the [modules](/modules) folder. There, you can find a ModBus client module to connect to ModBus devices, with more drivers in the works.
+
+# Path to 1.0 Release
+DARTWIC is undergoing some very intensive architectural changes at the moment. This includes a new communication platform, TEMPEST, updated database RAPID, the separation of the Engine and Interface, and the release of Client libraries and SDK's for custom interface components. The aim for DARTWIC 1.0 is to deliver a fully distributed server-client stack capable of cross-network communication with other DARTWIC nodes, custom clients, and a configurable interface, with all the features wanted in a data acquisition, controls, and mission operations software.
