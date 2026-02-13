@@ -1,0 +1,1305 @@
+{
+    "schematic_name": "default",
+    "schematic_file_name": "default",
+    "flow_instance": {
+        "nodes": [
+            {
+                "id": "qetRQLJrqOwuALwdECmA2",
+                "type": "tank",
+                "position": {
+                    "x": 813.1422579160215,
+                    "y": 160.24916845541708
+                },
+                "height": 337,
+                "width": 73,
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "hex_color",
+                        "value": "#4FC6D3"
+                    },
+                    "fillPercentageConfigurableInput": {
+                        "type": "linear_interpolate",
+                        "value": {
+                            "upper_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": "30"
+                            },
+                            "lower_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": "0"
+                            },
+                            "upper_value_configurableInput": {
+                                "type": "discrete_input",
+                                "value": "100"
+                            },
+                            "lower_value_configurableInput": {
+                                "type": "discrete_input",
+                                "value": 0
+                            },
+                            "input_value_configurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:general/tank_level_scale.value",
+                                "dropdown_label": "Tag Value"
+                            }
+                        },
+                        "dropdown_label": "Linear Interpolate"
+                    },
+                    "general_settings": {
+                        "top_label": "RUN TANK"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 73,
+                    "height": 337
+                },
+                "dragging": false,
+                "resizing": false
+            },
+            {
+                "id": "MhD_hsy5unks-51r9znDS",
+                "type": "tank",
+                "position": {
+                    "x": 1626.3420783380175,
+                    "y": 149.19348272167633
+                },
+                "height": 241,
+                "width": 122,
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "hex_color",
+                        "value": "#d995f3"
+                    },
+                    "fillPercentageConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "100"
+                    },
+                    "general_settings": {
+                        "top_label": "PRESSURANT"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 122,
+                    "height": 241
+                },
+                "dragging": false,
+                "resizing": false
+            },
+            {
+                "id": "wUf3227k5OVKs8Nz8-3Ep",
+                "type": "tank",
+                "position": {
+                    "x": 1480.2708873507559,
+                    "y": 148.91204495095985
+                },
+                "height": 245,
+                "width": 108,
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "hex_color",
+                        "value": "#50c1ce"
+                    },
+                    "fillPercentageConfigurableInput": {
+                        "type": "linear_interpolate",
+                        "value": {
+                            "upper_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": "160"
+                            },
+                            "lower_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": 0
+                            },
+                            "upper_value_configurableInput": {
+                                "type": "discrete_input",
+                                "value": "100"
+                            },
+                            "lower_value_configurableInput": {
+                                "type": "discrete_input",
+                                "value": "100"
+                            },
+                            "input_value_configurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:sensors/nitrous_scale.value",
+                                "dropdown_label": "Tag Value"
+                            }
+                        },
+                        "dropdown_label": "Linear Interpolate"
+                    },
+                    "general_settings": {
+                        "top_label": "NITROUS"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 108,
+                    "height": 245
+                },
+                "dragging": false,
+                "resizing": false
+            },
+            {
+                "id": "GsJN9y-x_whaLC5QBatgt",
+                "type": "valve",
+                "position": {
+                    "x": 1167.930943013593,
+                    "y": 515.2583935277817
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "discrete_input": {
+                        "input_type": "discrete",
+                        "selected_tag": ""
+                    },
+                    "function_call": {
+                        "inputList": [],
+                        "selected_function": ""
+                    },
+                    "general_settings": {
+                        "allow_button_click_tag": "",
+                        "top_label": "",
+                        "bottom_label": "NITROUS FILL"
+                    },
+                    "openStateIfElseBlock": {
+                        "ifConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:controls/nitrous.fill_valve.actual_state.value",
+                            "dropdown_label": "Tag Value"
+                        },
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:controls/nitrous.fill_valve.actual_state.value",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "orientation": "horizontal",
+                    "selected_tab": "tag_update",
+                    "tag_update": {
+                        "ifElseBlock": {
+                            "ifConfigurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:controls/nitrous.fill_valve.desired_state.value",
+                                "dropdown_label": "Tag Value"
+                            },
+                            "ifChecks": [
+                                {
+                                    "conditionalConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "1"
+                                    },
+                                    "thenConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "0"
+                                    }
+                                },
+                                {
+                                    "conditionalConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "0"
+                                    },
+                                    "thenConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "1"
+                                    }
+                                }
+                            ],
+                            "elseConfigurableInput": {
+                                "type": "discrete_input",
+                                "value": "0"
+                            }
+                        },
+                        "selected_tag": "TESTING_NETWORK:controls/nitrous.fill_valve.desired_state.value"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "bg-NhXzSAI-v_Dbipr_nn",
+                "type": "valve",
+                "position": {
+                    "x": 1125.2739654120828,
+                    "y": 619.7244611233166
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "discrete_input": {
+                        "input_type": "discrete",
+                        "selected_tag": ""
+                    },
+                    "function_call": {
+                        "inputList": [],
+                        "selected_function": ""
+                    },
+                    "general_settings": {
+                        "allow_button_click_tag": "",
+                        "bottom_label": "NITROUS VENT"
+                    },
+                    "openStateIfElseBlock": {
+                        "ifConfigurableInput": {},
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:controls/nitrous.vent_valve.actual_state.value",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "orientation": "horizontal",
+                    "selected_tab": "tag_update",
+                    "tag_update": {
+                        "ifElseBlock": {
+                            "ifConfigurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:controls/nitrous.vent_valve.actual_state.value",
+                                "dropdown_label": "Tag Value"
+                            },
+                            "ifChecks": [
+                                {
+                                    "conditionalConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "1"
+                                    },
+                                    "thenConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "0"
+                                    }
+                                },
+                                {
+                                    "conditionalConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "0"
+                                    },
+                                    "thenConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "1"
+                                    }
+                                }
+                            ],
+                            "elseConfigurableInput": {
+                                "type": "discrete_input",
+                                "value": "0"
+                            }
+                        },
+                        "selected_tag": "TESTING_NETWORK:controls/nitrous.vent_valve.desired_state.value"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "sAD5QU0HGJYdkRXtqX_Yg",
+                "type": "valve",
+                "position": {
+                    "x": 1204.2966283678936,
+                    "y": 286.9444383247614
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "discrete_input": {
+                        "input_type": "discrete",
+                        "selected_tag": ""
+                    },
+                    "function_call": {
+                        "inputList": [],
+                        "selected_function": ""
+                    },
+                    "general_settings": {
+                        "allow_button_click_tag": "",
+                        "bottom_label": "PRESSURANT VENT"
+                    },
+                    "openStateIfElseBlock": {
+                        "ifConfigurableInput": {},
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:controls/pressurant.vent_valve.actual_state.value",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "orientation": "horizontal",
+                    "selected_tab": "tag_update",
+                    "tag_update": {
+                        "ifElseBlock": {
+                            "ifConfigurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:controls/pressurant.vent_valve.desired_state.value",
+                                "dropdown_label": "Tag Value"
+                            },
+                            "ifChecks": [
+                                {
+                                    "conditionalConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "1"
+                                    },
+                                    "thenConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "0"
+                                    }
+                                },
+                                {
+                                    "conditionalConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "0"
+                                    },
+                                    "thenConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "1"
+                                    }
+                                }
+                            ],
+                            "elseConfigurableInput": {
+                                "type": "discrete_input",
+                                "value": "0"
+                            }
+                        },
+                        "selected_tag": "TESTING_NETWORK:controls/pressurant.vent_valve.desired_state.value"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "0bV16DIIr8S_OSf2glsSp",
+                "type": "valve",
+                "position": {
+                    "x": 1111.1670548726875,
+                    "y": 390.9800338183926
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "discrete_input": {
+                        "input_type": "discrete",
+                        "selected_tag": ""
+                    },
+                    "function_call": {
+                        "inputList": [],
+                        "selected_function": "toggle_pressurant_fill_valve"
+                    },
+                    "general_settings": {
+                        "allow_button_click_tag": "",
+                        "bottom_label": "PRESSURANT FILL"
+                    },
+                    "openStateIfElseBlock": {
+                        "ifConfigurableInput": {},
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:controls/pressurant.fill_valve.last_known_state.value",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "orientation": "horizontal",
+                    "selected_tab": "function_call",
+                    "tag_update": {
+                        "ifElseBlock": {
+                            "ifConfigurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:controls/pressurant.vent_valve.desired_state.value",
+                                "dropdown_label": "Tag Value"
+                            },
+                            "ifChecks": [
+                                {
+                                    "conditionalConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "1"
+                                    },
+                                    "thenConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "0"
+                                    }
+                                },
+                                {
+                                    "conditionalConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "0"
+                                    },
+                                    "thenConfigurableInput": {
+                                        "type": "discrete_input",
+                                        "value": "1"
+                                    }
+                                }
+                            ],
+                            "elseConfigurableInput": {
+                                "type": "discrete_input",
+                                "value": "0"
+                            }
+                        },
+                        "selected_tag": "TESTING_NETWORK:controls/pressurant.vent_valve.desired_state.value"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "9EbuVmYlbhVmIlrxCD4RQ",
+                "type": "valve",
+                "position": {
+                    "x": 824.5570667041839,
+                    "y": 631.3570457295106
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "discrete_input": {
+                        "input_type": "discrete",
+                        "selected_tag": ""
+                    },
+                    "function_call": {
+                        "inputList": [],
+                        "selected_function": "toggle_bray_valve"
+                    },
+                    "general_settings": {
+                        "allow_button_click_tag": "",
+                        "top_label": "Bray Valve"
+                    },
+                    "openStateIfElseBlock": {
+                        "ifConfigurableInput": {},
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:controls/bray_valve.last_known_state.value",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "orientation": "vertical",
+                    "selected_tab": "function_call",
+                    "tag_update": {
+                        "ifElseBlock": {
+                            "elseConfigurableInput": {
+                                "type": "discrete_input",
+                                "value": ""
+                            },
+                            "ifChecks": [],
+                            "ifConfigurableInput": {}
+                        },
+                        "selected_tag": ""
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "lzyHFLq0L5becudk7fnix",
+                "type": "tank",
+                "position": {
+                    "x": 812.5001357119796,
+                    "y": 747.4578763939979
+                },
+                "height": 195,
+                "width": 76,
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "hex_color",
+                        "value": "#4FC6D3"
+                    },
+                    "fillPercentageConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": 0
+                    },
+                    "general_settings": {
+                        "top_label": "CHAMBER"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 76,
+                    "height": 195
+                },
+                "resizing": false,
+                "dragging": false
+            },
+            {
+                "id": "1MKHM9819hxhEfwxR6k47",
+                "type": "svg",
+                "position": {
+                    "x": 1171.6671504653518,
+                    "y": 633.6057734413813
+                },
+                "height": 25,
+                "width": 25,
+                "data": {
+                    "fill_color": "none",
+                    "handlePosition": {
+                        "x": -4,
+                        "y": 50
+                    },
+                    "handles": [
+                        {
+                            "handlePosition": {
+                                "x": -10,
+                                "y": 50
+                            },
+                            "handleType": "customizablePositionHandle",
+                            "position": "left",
+                            "type": "both"
+                        }
+                    ],
+                    "stroke_color": "#555555",
+                    "stroke_width": 2,
+                    "svg_color_editable": true,
+                    "svg_string": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-wind-icon lucide-wind\"><path d=\"M12.8 19.6A2 2 0 1 0 14 16H2\"/><path d=\"M17.5 8a2.5 2.5 0 1 1 2 4H2\"/><path d=\"M9.8 4.4A2 2 0 1 1 11 8H2\"/></svg>",
+                    "vb_h": 18,
+                    "vb_min_x": 2,
+                    "vb_min_y": 3,
+                    "vb_w": 21,
+                    "viewbox_border": {
+                        "color": "orange",
+                        "width": 0
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 25,
+                    "height": 25
+                },
+                "dragging": false
+            },
+            {
+                "id": "hlA9pPNLMrKlSoreUUOtX",
+                "type": "svg",
+                "position": {
+                    "x": 1250.8872517252992,
+                    "y": 301.0554582622617
+                },
+                "height": 25,
+                "width": 25,
+                "data": {
+                    "fill_color": "none",
+                    "handlePosition": {
+                        "x": -4,
+                        "y": 50
+                    },
+                    "handles": [
+                        {
+                            "handlePosition": {
+                                "x": -10,
+                                "y": 50
+                            },
+                            "handleType": "customizablePositionHandle",
+                            "position": "left",
+                            "type": "both"
+                        }
+                    ],
+                    "stroke_color": "#555555",
+                    "stroke_width": 2,
+                    "svg_color_editable": true,
+                    "svg_string": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-wind-icon lucide-wind\"><path d=\"M12.8 19.6A2 2 0 1 0 14 16H2\"/><path d=\"M17.5 8a2.5 2.5 0 1 1 2 4H2\"/><path d=\"M9.8 4.4A2 2 0 1 1 11 8H2\"/></svg>",
+                    "vb_h": 18,
+                    "vb_min_x": 2,
+                    "vb_min_y": 3,
+                    "vb_w": 21,
+                    "viewbox_border": {
+                        "color": "orange",
+                        "width": 0
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 25,
+                    "height": 25
+                },
+                "dragging": false
+            },
+            {
+                "id": "f3Yq3NbPqy5E0up0BMJFg",
+                "type": "parameter_display",
+                "position": {
+                    "x": 615.2334222304476,
+                    "y": 191.19552720184575
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "ifElseBlock": {
+                        "ifConfigurableInput": {},
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:sensors/load_cell.mean",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "labelConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "LOAD CELL"
+                    },
+                    "show_label": true,
+                    "symbol": "F",
+                    "unitsConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "LBF"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "oiQhCADABRvdrNpzmoSV2",
+                "type": "parameter_display",
+                "position": {
+                    "x": 615.2334222304479,
+                    "y": 253.87516775916652
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "ifElseBlock": {
+                        "ifConfigurableInput": {},
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:sensors/run_tank.pressure.mean",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "labelConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "RUN TANK PRESSURE"
+                    },
+                    "show_label": true,
+                    "symbol": "P",
+                    "unitsConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "PSIG"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "dsfwE19tzmXjURneDjEPM",
+                "type": "parameter_display",
+                "position": {
+                    "x": 599.5635120911172,
+                    "y": 744.8656854581807
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "ifElseBlock": {
+                        "ifConfigurableInput": {},
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:sensors/injector.pressure.mean",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "labelConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "INJECTOR PRESSURE"
+                    },
+                    "show_label": true,
+                    "symbol": "P",
+                    "unitsConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "PSIG"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "xql3p0xKG-Ntp1dTRc5mu",
+                "type": "parameter_display",
+                "position": {
+                    "x": 597.822410964525,
+                    "y": 795.3576181293557
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "ifElseBlock": {
+                        "ifConfigurableInput": {},
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:sensors/chamber.pressure.mean",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "labelConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "CHAMBER PRESSURE"
+                    },
+                    "show_label": true,
+                    "symbol": "P",
+                    "unitsConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "PSIG"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "6AJIoTf2UC2fgOKzYCuMv",
+                "type": "parameter_display",
+                "position": {
+                    "x": 1274.6188165377343,
+                    "y": 425.752246620624
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "ifElseBlock": {
+                        "ifConfigurableInput": {},
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:sensors/pressurant_supply.pressure.mean",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "labelConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "PRESSURANT PRESSURE"
+                    },
+                    "show_label": true,
+                    "symbol": "P",
+                    "unitsConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "PSIG"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "jkU3Am_VZhqeJhksYhdcC",
+                "type": "parameter_display",
+                "position": {
+                    "x": 1323.7482659744383,
+                    "y": 552.3606961906829
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "ifElseBlock": {
+                        "ifConfigurableInput": {},
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:sensors/nitrous_supply.pressure.mean",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "labelConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "NITROUS PRESSURE"
+                    },
+                    "show_label": true,
+                    "symbol": "P",
+                    "unitsConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "PSIG"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "DyMa_o2pY23kTrOZEmdyz",
+                "type": "parameter_display",
+                "position": {
+                    "x": 1463.1496708808722,
+                    "y": 81.50615622653399
+                },
+                "height": 10,
+                "width": 10,
+                "data": {
+                    "ifElseBlock": {
+                        "ifConfigurableInput": {},
+                        "ifChecks": [],
+                        "elseConfigurableInput": {
+                            "type": "tag_value",
+                            "value": "TESTING_NETWORK:sensors/nitrous_scale.mean",
+                            "dropdown_label": "Tag Value"
+                        }
+                    },
+                    "labelConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "NITROUS SCALE"
+                    },
+                    "show_label": true,
+                    "symbol": "F",
+                    "unitsConfigurableInput": {
+                        "type": "discrete_input",
+                        "value": "LBF"
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 10,
+                    "height": 10
+                },
+                "dragging": false
+            },
+            {
+                "id": "XZG17GA9Hf_-t9RXSfY5t",
+                "type": "channel_graph",
+                "position": {
+                    "x": 1883.8525702104455,
+                    "y": 243.8786047655703
+                },
+                "height": 360,
+                "width": 670,
+                "data": {
+                    "series": [
+                        {
+                            "channel_path": "TESTING_NETWORK:sensors/nitrous_supply.pressure.mean",
+                            "label": "nitrous pressure mean",
+                            "color": "#75f1ff"
+                        },
+                        {
+                            "channel_path": "TESTING_NETWORK:sensors/run_tank.pressure.mean",
+                            "label": "run tank pressure mean",
+                            "color": "#419099"
+                        }
+                    ],
+                    "settings": {
+                        "windowSeconds": 30,
+                        "cullScale": 3,
+                        "enableHistoricalRequests": false
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 670,
+                    "height": 360
+                },
+                "dragging": false,
+                "resizing": false
+            },
+            {
+                "id": "jMIDZd1nyyyrWU7P13nXq",
+                "type": "channel_graph",
+                "position": {
+                    "x": 1879.5691628869552,
+                    "y": 674.1010033959068
+                },
+                "height": 341,
+                "width": 669,
+                "data": {
+                    "series": [
+                        {
+                            "channel_path": "TESTING_NETWORK:sensors/load_cell.mean",
+                            "label": "load cell mean",
+                            "color": "#e17f7f"
+                        }
+                    ],
+                    "settings": {
+                        "windowSeconds": 30,
+                        "cullScale": 3,
+                        "enableHistoricalRequests": false
+                    }
+                },
+                "selected": false,
+                "measured": {
+                    "width": 669,
+                    "height": 341
+                },
+                "dragging": false,
+                "resizing": false
+            }
+        ],
+        "edges": [
+            {
+                "type": "edge",
+                "style": {
+                    "stroke": "#555555",
+                    "strokeWidth": 2
+                },
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "hex_color",
+                        "value": "#555555"
+                    },
+                    "strokeWidthConfigurableInput": {
+                        "type": "discrete_input_numerical",
+                        "value": "3"
+                    }
+                },
+                "source": "qetRQLJrqOwuALwdECmA2",
+                "sourceHandle": "bottom-1",
+                "target": "9EbuVmYlbhVmIlrxCD4RQ",
+                "targetHandle": "top-2",
+                "id": "xy-edge__qetRQLJrqOwuALwdECmA2bottom-1-9EbuVmYlbhVmIlrxCD4RQtop-2",
+                "selected": false
+            },
+            {
+                "type": "edge",
+                "style": {
+                    "stroke": "#555555",
+                    "strokeWidth": 2
+                },
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "hex_color",
+                        "value": "#555555"
+                    },
+                    "strokeWidthConfigurableInput": {
+                        "type": "discrete_input_numerical",
+                        "value": "3"
+                    }
+                },
+                "source": "lzyHFLq0L5becudk7fnix",
+                "sourceHandle": "top-1",
+                "target": "9EbuVmYlbhVmIlrxCD4RQ",
+                "targetHandle": "bottom-2",
+                "id": "xy-edge__lzyHFLq0L5becudk7fnixtop-1-9EbuVmYlbhVmIlrxCD4RQbottom-2",
+                "selected": false
+            },
+            {
+                "type": "edge",
+                "style": {
+                    "stroke": "#555555",
+                    "strokeWidth": 2
+                },
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "linear_interpolate",
+                        "value": {
+                            "upper_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": "1000"
+                            },
+                            "lower_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": 0
+                            },
+                            "upper_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#419099",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "lower_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#888686",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "input_value_configurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:sensors/nitrous_supply.pressure.mean",
+                                "dropdown_label": "Tag Value"
+                            }
+                        },
+                        "dropdown_label": "Linear Interpolate"
+                    },
+                    "strokeWidthConfigurableInput": {
+                        "type": "discrete_input_numerical",
+                        "value": "3"
+                    }
+                },
+                "source": "GsJN9y-x_whaLC5QBatgt",
+                "sourceHandle": "right-1",
+                "target": "wUf3227k5OVKs8Nz8-3Ep",
+                "targetHandle": "bottom-2",
+                "id": "xy-edge__GsJN9y-x_whaLC5QBatgtright-1-wUf3227k5OVKs8Nz8-3Epbottom-2",
+                "selected": false
+            },
+            {
+                "type": "edge",
+                "style": {
+                    "stroke": "#555555",
+                    "strokeWidth": 2
+                },
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "linear_interpolate",
+                        "value": {
+                            "upper_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": "1000"
+                            },
+                            "lower_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": 0
+                            },
+                            "upper_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#419099",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "lower_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#7d7d7d",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "input_value_configurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:sensors/nitrous_supply.pressure.mean",
+                                "dropdown_label": "Tag Value"
+                            }
+                        },
+                        "dropdown_label": "Linear Interpolate"
+                    },
+                    "strokeWidthConfigurableInput": {
+                        "type": "discrete_input_numerical",
+                        "value": "3"
+                    }
+                },
+                "source": "bg-NhXzSAI-v_Dbipr_nn",
+                "sourceHandle": "left-1",
+                "target": "GsJN9y-x_whaLC5QBatgt",
+                "targetHandle": "left-2",
+                "id": "xy-edge__bg-NhXzSAI-v_Dbipr_nnleft-1-GsJN9y-x_whaLC5QBatgtleft-2",
+                "selected": false
+            },
+            {
+                "type": "edge",
+                "style": {
+                    "stroke": "#555555",
+                    "strokeWidth": 2
+                },
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "linear_interpolate",
+                        "value": {
+                            "upper_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": "1000"
+                            },
+                            "lower_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": 0
+                            },
+                            "upper_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#419099",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "lower_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#858585",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "input_value_configurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:sensors/nitrous_supply.pressure.mean",
+                                "dropdown_label": "Tag Value"
+                            }
+                        },
+                        "dropdown_label": "Linear Interpolate"
+                    },
+                    "strokeWidthConfigurableInput": {
+                        "type": "discrete_input_numerical",
+                        "value": "3"
+                    }
+                },
+                "source": "qetRQLJrqOwuALwdECmA2",
+                "sourceHandle": "bottom-1",
+                "target": "GsJN9y-x_whaLC5QBatgt",
+                "targetHandle": "left-2",
+                "id": "xy-edge__qetRQLJrqOwuALwdECmA2bottom-1-GsJN9y-x_whaLC5QBatgtleft-2",
+                "selected": false
+            },
+            {
+                "type": "edge",
+                "style": {
+                    "stroke": "#555555",
+                    "strokeWidth": 2
+                },
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "linear_interpolate",
+                        "value": {
+                            "upper_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": "100"
+                            },
+                            "lower_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": 0
+                            },
+                            "upper_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#d0aadf",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "lower_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#6e6e6e",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "input_value_configurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:sensors/pressurant_supply.pressure.mean",
+                                "dropdown_label": "Tag Value"
+                            }
+                        },
+                        "dropdown_label": "Linear Interpolate"
+                    },
+                    "strokeWidthConfigurableInput": {
+                        "type": "discrete_input_numerical",
+                        "value": "3"
+                    }
+                },
+                "source": "0bV16DIIr8S_OSf2glsSp",
+                "sourceHandle": "right-1",
+                "target": "MhD_hsy5unks-51r9znDS",
+                "targetHandle": "bottom-2",
+                "id": "xy-edge__0bV16DIIr8S_OSf2glsSpright-1-MhD_hsy5unks-51r9znDSbottom-2",
+                "selected": false
+            },
+            {
+                "type": "edge",
+                "style": {
+                    "stroke": "#555555",
+                    "strokeWidth": 2
+                },
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "linear_interpolate",
+                        "value": {
+                            "upper_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": 100
+                            },
+                            "lower_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": 0
+                            },
+                            "upper_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#d0aacb",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "lower_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#616161",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "input_value_configurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:sensors/pressurant_supply.pressure.mean",
+                                "dropdown_label": "Tag Value"
+                            }
+                        },
+                        "dropdown_label": "Linear Interpolate"
+                    },
+                    "strokeWidthConfigurableInput": {
+                        "type": "discrete_input_numerical",
+                        "value": "3"
+                    }
+                },
+                "source": "qetRQLJrqOwuALwdECmA2",
+                "sourceHandle": "top-1",
+                "target": "0bV16DIIr8S_OSf2glsSp",
+                "targetHandle": "left-2",
+                "id": "xy-edge__qetRQLJrqOwuALwdECmA2top-1-0bV16DIIr8S_OSf2glsSpleft-2",
+                "selected": false
+            },
+            {
+                "type": "edge",
+                "style": {
+                    "stroke": "#555555",
+                    "strokeWidth": 2
+                },
+                "data": {
+                    "fillColorConfigurableInput": {
+                        "type": "linear_interpolate",
+                        "value": {
+                            "upper_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": "100"
+                            },
+                            "lower_input_configurableInput": {
+                                "type": "discrete_input",
+                                "value": 0
+                            },
+                            "upper_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#d0aadf",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "lower_value_configurableInput": {
+                                "type": "hex_color",
+                                "value": "#8a8a8a",
+                                "dropdown_label": "Hex Color"
+                            },
+                            "input_value_configurableInput": {
+                                "type": "tag_value",
+                                "value": "TESTING_NETWORK:sensors/pressurant_supply.pressure.mean",
+                                "dropdown_label": "Tag Value"
+                            }
+                        },
+                        "dropdown_label": "Linear Interpolate"
+                    },
+                    "strokeWidthConfigurableInput": {
+                        "type": "discrete_input_numerical",
+                        "value": "3"
+                    }
+                },
+                "source": "0bV16DIIr8S_OSf2glsSp",
+                "sourceHandle": "left-1",
+                "target": "sAD5QU0HGJYdkRXtqX_Yg",
+                "targetHandle": "left-2",
+                "id": "xy-edge__0bV16DIIr8S_OSf2glsSpleft-1-sAD5QU0HGJYdkRXtqX_Ygleft-2",
+                "selected": false
+            }
+        ],
+        "viewport": {
+            "x": -576.6282626844438,
+            "y": -4.39506488339407,
+            "zoom": 1.0649120056528314
+        }
+    },
+    "background_settings": {
+        "variant": "blank",
+        "gap": 12,
+        "size": 1,
+        "bgColor": "#09090b",
+        "color": "#606060"
+    }
+}

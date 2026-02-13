@@ -1,0 +1,12 @@
+name: pad_weight
+registry: modbus_tcp_client
+parameters:
+  device_name: PAD_WEIGHT
+  server_ip: 192.168.1.116
+  server_port: 502
+  num_coils: 0
+  num_discrete_inputs: 0
+  num_holding_registers: 0
+  num_input_registers: 1
+  tv_sec: 3
+  tv_usec: 3

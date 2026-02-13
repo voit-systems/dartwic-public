@@ -1,0 +1,38 @@
+{
+    "automations/auto_fill.py": {
+        "run_on_startup": true
+    },
+    "alarms/sensors.py": {
+        "run_on_startup": true
+    },
+    "other/fill_sim.py": {
+        "run_on_startup": true
+    },
+    "mission_clock.py": {
+        "run_on_startup": true
+    },
+    "alarms/controls.py": {
+        "run_on_startup": true
+    },
+    "sensors.py": {
+        "run_on_startup": true
+    },
+    "controls.py": {
+        "run_on_startup": true
+    },
+    "automations/igniter.py": {
+        "run_on_startup": true
+    },
+    "alarms/general.py": {
+        "run_on_startup": true
+    },
+    "other/general.py": {
+        "run_on_startup": true
+    },
+    "automations/checks.py": {
+        "run_on_startup": true
+    },
+    "general_defaults.py": {
+        "run_on_startup": true
+    }
+}

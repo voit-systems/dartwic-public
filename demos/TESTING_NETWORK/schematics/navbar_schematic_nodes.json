@@ -1,0 +1,74 @@
+[
+    {
+        "data": {
+            "ifElseBlock": {
+                "ifConfigurableInput": {},
+                "ifChecks": [],
+                "elseConfigurableInput": {
+                    "type": "discrete_input",
+                    "value": ""
+                }
+            },
+            "labelConfigurableInput": {
+                "type": "discrete_input",
+                "value": ""
+            },
+            "unitsConfigurableInput": {
+                "type": "discrete_input",
+                "value": ""
+            }
+        },
+        "height": 10,
+        "type": "label",
+        "width": 10,
+        "id": 1763601750728
+    },
+    {
+        "data": {
+            "ifElseBlock": {
+                "ifConfigurableInput": {},
+                "ifChecks": [],
+                "elseConfigurableInput": {
+                    "type": "discrete_input",
+                    "value": ""
+                }
+            },
+            "labelConfigurableInput": {
+                "type": "discrete_input",
+                "value": ""
+            },
+            "unitsConfigurableInput": {
+                "type": "discrete_input",
+                "value": ""
+            }
+        },
+        "height": 10,
+        "type": "label",
+        "width": 10,
+        "id": 1763601913707
+    },
+    {
+        "data": {
+            "ifElseBlock": {
+                "ifConfigurableInput": {},
+                "ifChecks": [],
+                "elseConfigurableInput": {
+                    "type": "discrete_input",
+                    "value": ""
+                }
+            },
+            "labelConfigurableInput": {
+                "type": "discrete_input",
+                "value": ""
+            },
+            "unitsConfigurableInput": {
+                "type": "discrete_input",
+                "value": ""
+            }
+        },
+        "height": 10,
+        "type": "label",
+        "width": 10,
+        "id": 1763601833772
+    }
+]
