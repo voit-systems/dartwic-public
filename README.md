@@ -34,8 +34,27 @@ To view an example project that uses DARTWIC, view the [demos](/demos) folder. T
 
 To view examples of custom drivers built for DARTWIC, view the [modules](/modules) folder. There, you can find a ModBus client module to connect to ModBus devices, with more drivers in the works.
 
-# Documentation
-Documentation is very sparse right now, but more will be added later. 
+# Setup/ Other Programs Needed
+The current releases of DARTWIC uses InfluxDB to record channel values to disk. To view these values, you must install the InfluxDB explorer. Read more here: https://docs.influxdata.com/influxdb3/explorer/install/
 
-# Path to 1.0 Release
+DARTWIC runs a local InfluxDB server.
+
+The GUI can only be installed via Docker, which is dumb as hell in my opinon. DARTWIC version 0.5 will replace InfluxDB with SQLite, and all data viewing & downloading will be through DARTWIC interface.
+
+# Documentation
+[Documentation](/documentation) is very sparse right now, but more will be added later. 
+
+# Bugs
+DARTWIC is a complex project. Reporting bugs would be appreciated to help development!
+
+## Current Bugs
+
+### Performance
+Graphs currently are very browser intensive. So if your browser is lagging, for example, when u have multiple schematics open and the channel search up, close the channel search or some schematics to increase performance. Or just open another browser tab to distribute the load.
+
+### Interface
+1. While having a python script and schematic open at the same time, the spacebar does not work/ register key presses. To fix, close all opened schematics.
+2. Channel search does not show all channels in the RAPID database. Search for a channel to find it. The channel search is one of the first features made, it is in need of a rework, which will come in version 0.5.
+
+# Path to 0.5 Release
 DARTWIC is undergoing some very intensive architectural changes at the moment. This includes a new communication platform, TEMPEST, updated database RAPID, the separation of the Engine and Interface, and the release of Client libraries and SDK's for custom interface components. The aim for DARTWIC 1.0 is to deliver a fully distributed server-client stack capable of cross-network communication with other DARTWIC nodes, custom clients, and a configurable interface, with all the features wanted in a data acquisition, controls, and mission operations software.
