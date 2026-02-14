@@ -34,6 +34,33 @@ To view an example project that uses DARTWIC, view the [demos](/demos) folder. T
 
 To view examples of custom drivers built for DARTWIC, view the [modules](/modules) folder. There, you can find a ModBus client module to connect to ModBus devices, with more drivers in the works.
 
+## Usage
+Tips to use DARTWIC
+
+### Startup
+Run the DARTWIC.exe in the bin folder to start the engine and the interface webserver.
+You should see some messages indicaiting processes that have been completed. Some notable ones below:
+
+RAPID InfluxDB startup:
+<img width="1032" height="39" alt="image" src="https://github.com/user-attachments/assets/66388ff4-3afe-4758-ae3d-869b9fbbd304" />
+Note: if the influxdb3.exe process is already started, say, from a previous DARTWIC instance running, it will say failed to bind address, however, it should still work.
+
+Python start successful:
+<img width="460" height="26" alt="image" src="https://github.com/user-attachments/assets/233c7860-33b0-4530-9812-4ad0d31d9786" />
+
+Webserver start (open the ip in web browser to view the GUI):
+<img width="843" height="43" alt="image" src="https://github.com/user-attachments/assets/a7ac4c8d-821b-475f-9171-3dc3ea24e27c" />
+
+Modules loaded:
+<img width="1097" height="46" alt="image" src="https://github.com/user-attachments/assets/778beb4b-2521-488c-b292-f81983d45362" />
+<img width="764" height="29" alt="image" src="https://github.com/user-attachments/assets/845d2b92-7655-4c97-ac55-ba0f398b3d8c" />
+
+
+### Shutdown
+DARTWIC does not have a shutdown procedure currently. Just close the terminal, which will end the process. Beware, if you just got done ingesting lots of data, give the engine a few seconds to record data to InfluxDB.
+
+The influxdb server will still be running. Be sure to end the process from the windows task manager.
+
 # Setup/ Other Programs Needed
 The current releases of DARTWIC uses InfluxDB to record channel values to disk. To view these values, you must install the InfluxDB explorer. Read more here: https://docs.influxdata.com/influxdb3/explorer/install/
 
@@ -47,14 +74,15 @@ The GUI can only be installed via Docker, which is dumb as hell in my opinon. DA
 # Bugs
 DARTWIC is a complex project. Reporting bugs would be appreciated to help development!
 
-## Current Bugs
-
 ### Performance
 Graphs currently are very browser intensive. So if your browser is lagging, for example, when u have multiple schematics open and the channel search up, close the channel search or some schematics to increase performance. Or just open another browser tab to distribute the load.
+
+## Current Bugs
 
 ### Interface
 1. While having a python script and schematic open at the same time, the spacebar does not work/ register key presses. To fix, close all opened schematics.
 2. Channel search does not show all channels in the RAPID database. Search for a channel to find it. The channel search is one of the first features made, it is in need of a rework, which will come in version 0.5.
+3. Interface will crash when attempting to edit the graph window in a console event context window.
 
 # Path to 0.5 Release
 DARTWIC is undergoing some very intensive architectural changes at the moment. This includes a new communication platform, TEMPEST, updated database RAPID, the separation of the Engine and Interface, and the release of Client libraries and SDK's for custom interface components. The aim for DARTWIC 1.0 is to deliver a fully distributed server-client stack capable of cross-network communication with other DARTWIC nodes, custom clients, and a configurable interface, with all the features wanted in a data acquisition, controls, and mission operations software.
