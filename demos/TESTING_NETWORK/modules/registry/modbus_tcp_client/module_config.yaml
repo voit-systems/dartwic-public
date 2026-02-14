@@ -2,7 +2,7 @@ name: "modbus_tcp_client" #must match dll name and folder name
 title: "Modbus TCP Client"
 description: "Creates a modbus TCP client to connect DARTWIC to modbus devices."
 author: "Voit Systems"
-version: "1.0"
+version: "v0.3.0"
 icon_image_src: "https://upload.wikimedia.org/wikipedia/commons/d/da/Logo_of_Modbus.svg"
 
 ui:

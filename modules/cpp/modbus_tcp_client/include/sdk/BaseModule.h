@@ -8,6 +8,25 @@
 #include <yaml-cpp/yaml.h>
 #include "sdk_api.h"
 
+/*
+
+For DARTWIC to find the module export, the .main file should export a function called <createModule> that makes a class
+that inherits this class.
+
+The cmake project should then be exported as a shared library.
+
+#ifdef _WIN32
+    #define EXPORT_API __declspec(dllexport)
+#else
+    #define EXPORT_API __attribute__((visibility("default")))
+#endif
+
+extern "C" EXPORT_API DARTWIC::Modules::BaseModule* createModule(YAML::Node cfg, DARTWIC::API::SDK_API* drtw) {
+    return new MyModule(cfg, drtw);
+}
+
+*/
+
 namespace DARTWIC::Modules {
 
     class BaseModule {
