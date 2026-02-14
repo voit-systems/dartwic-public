@@ -1,6 +1,4 @@
-\# Documentation
-
-
+# Documentation
 
 All DARTWIC documentation here
 
