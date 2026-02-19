@@ -5,3 +5,6 @@
 # CMake Files
 cmake-build-debug/
 cmake-build-release/
+
+# Release Binaries
+release/
