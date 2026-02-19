@@ -21,7 +21,10 @@ target_include_directories(module_example PRIVATE
         ${subdirs})
 
 ############### NON HEADER ONLY LIBRARY INCLUDES ###############
-target_link_libraries(module_example PRIVATE
+find_package(yaml-cpp CONFIG REQUIRED)
+
+target_link_libraries(modbus_tcp_client PRIVATE
+        yaml-cpp::yaml-cpp
 )
 
 ############### OUTPUT DIRECTORIES ###############
