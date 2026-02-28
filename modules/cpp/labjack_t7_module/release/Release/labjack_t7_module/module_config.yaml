@@ -1,0 +1,45 @@
+name: "labjack_t7_module"
+title: "LabJack T7 Module"
+description: "LabJack T7 module implemented with the DARTWIC C++ module system."
+author: "Voit Systems"
+version: "1.0"
+icon_image_src: "https://labjack.com/cdn/shop/files/LabJack_Logo_fa79278b-4a0c-4e5e-8ed7-dff9ad5b8dbb.png?v=1656709585&width=180"
+
+ui:
+  categories:
+    - category: "Device Setup"
+      parameters:
+        device_name:
+          default: "labjackT7"
+          input:
+            type: "discrete_input"
+            label: "Device Name"
+            placeholder: "labjackT7"
+
+        device_type:
+          default: "T7"
+          input:
+            type: "discrete_input"
+            label: "Device Type"
+            placeholder: "T7"
+
+        connection_type:
+          default: "ANY"
+          input:
+            type: "discrete_input"
+            label: "Connection Type"
+            placeholder: "ANY"
+
+        identifier:
+          default: "ANY"
+          input:
+            type: "discrete_input"
+            label: "Identifier"
+            placeholder: "ANY or LJM_DEMO_MODE"
+
+        analog_channel_list:
+          default: "AIN0, AIN1"
+          input:
+            type: "discrete_input"
+            label: "Analog Channel List"
+            placeholder: "AIN0, AIN1, AIN2"
