@@ -6,8 +6,8 @@ set(CMAKE_CXX_STANDARD 20)
 # the name of the module (default set to the project name)
 # must match the "name" parameter in the module_config.yaml
 set(MODULE_NAME "${PROJECT_NAME}" CACHE STRING "Name of the module folder")
-# the path to copy the module to dartwic registry
-set(REGISTRY_PATH "C:/Users/saint/Documents/Code/Github/TESTING_NETWORK/DARTWIC/modules/registry" CACHE PATH "Path to DARTWIC modules registry folder")
+# the path to copy the module to dartwic registry that u want to test in
+set(REGISTRY_PATH "<path-to-dartwic-project>/modules/registry" CACHE PATH "Path to DARTWIC modules registry folder")
 
 
 ############### SOURCE FILES ###############

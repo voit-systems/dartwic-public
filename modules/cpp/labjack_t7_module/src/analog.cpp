@@ -38,7 +38,7 @@ void LabJackT7Controller::analogChannelSettingsCheck(bool build) {
             if (type != "analog") continue;
 
             //NEGATIVE CHANNEL
-            double negative_channel_tag = query("stream_data.analog_channels."+channelName+".negative_channel", 199.0);
+            double negative_channel_tag = query("analog_channels."+channelName+".negative_channel", 199.0);
             int negative_channel = analog_channel_settings[channelName]["negative_channel"];
             //if what the user wants is different than what is currently set
             if (negative_channel_tag != negative_channel) {
@@ -71,7 +71,7 @@ void LabJackT7Controller::analogChannelSettingsCheck(bool build) {
                         //update the map
                         analog_channel_settings[channelName]["negative_channel"] = 199;
                         //update the tag
-                        upsert("stream_data.analog_channels."+channelName+".negative_channel", 199);
+                        upsert("analog_channels."+channelName+".negative_channel", 199);
 
                         handle_error(error);
 
@@ -85,7 +85,7 @@ void LabJackT7Controller::analogChannelSettingsCheck(bool build) {
             }
 
             //RANGE
-            double range_tag = query("stream_data.analog_channels."+channelName+".range", 10.0);
+            double range_tag = query("analog_channels."+channelName+".range", 10.0);
             double range = analog_channel_settings[channelName]["range"];
 
             if (range_tag != range) {
@@ -99,7 +99,7 @@ void LabJackT7Controller::analogChannelSettingsCheck(bool build) {
                     //update the map
                     analog_channel_settings[channelName]["range"] = 10.0;
                     //update the tag
-                    upsert("stream_data.analog_channels."+channelName+".range", 10.0);
+                    upsert("analog_channels."+channelName+".range", 10.0);
 
                     handle_error(error);
 
@@ -135,9 +135,9 @@ void LabJackT7Controller::removeUnusedChannels(const std::vector<std::string> ne
 
         std::string channelName = removed_channels[channelNum];
         //delete the stream data tag
-        remove("stream_data.analog_channels."+channelName);
-        remove("stream_data.analog_channels."+channelName+".negative_channel");
-        remove("stream_data.analog_channels."+channelName+".range");
+        remove("analog_channels."+channelName);
+        remove("analog_channels."+channelName+".negative_channel");
+        remove("analog_channels."+channelName+".range");
 
         //delete the mapped tag name
         //function above deletes all mapped channels associated with the channels
