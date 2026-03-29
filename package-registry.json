@@ -1,0 +1,17 @@
+[
+  {
+    "id": "modbus_tcp_client",
+    "name": "Modbus TCP Client",
+    "author": "Voit Systems",
+    "description": "Modbus TCP client package with engine module and matching interface module.",
+    "repo": "voit-systems/dartwic-modbus-tcp-client",
+    "downloads": {
+      "engine": {
+        "win32-x64": "https://github.com/voit-systems/dartwic-modbus-tcp-client/releases/download/v0.1.0/modbus_tcp_client-engine-win32-x64.zip"
+      },
+      "interface": {
+        "any": "https://github.com/voit-systems/dartwic-modbus-tcp-client/releases/download/v0.1.0/modbus_tcp_client-interface.zip"
+      }
+    }
+  }
+]
