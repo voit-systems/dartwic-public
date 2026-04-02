@@ -1,5 +1,5 @@
 # DARTWIC
-Public facing releases, software development kits, documentation, issue trackers, and much more for DARTWIC
+Public facing software development kits, documentation, issue trackers, and much more for DARTWIC
 
 # What is DARTWIC?
 Data Acquisition for Rocket Testing With Integrated Controls.
