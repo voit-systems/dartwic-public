@@ -1,6 +1,0 @@
-{
-    "connection_type": "ANY",
-    "device_type": "T7",
-    "identifier": "ANY",
-    "stream_address_list": "AIN0, AIN1, AIN2, AIN3, AIN4, AIN5, AIN6, AIN7, AIN8, AIN9"
-}

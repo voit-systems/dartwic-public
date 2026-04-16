@@ -1,4 +1,0 @@
-{
-    "influxdb_address": "127.0.0.1:8181",
-    "influxdb_dir": "../rapid/InfluxDB"
-}

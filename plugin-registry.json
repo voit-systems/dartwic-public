@@ -2,8 +2,15 @@
   {
     "id": "modbus_tcp_client",
     "name": "Modbus TCP Client",
-    "author": "Voit Systems",
-    "description": "Modbus TCP client package with engine module and matching interface module.",
+    "author": "Kempton Burton",
+    "description": "Plugin to connect to a Modbus server via a Modbus TCP client.",
     "repo": "voit-systems/dartwic-modbus-tcp-client"
+  },
+  {
+    "id": "labjack_t7",
+    "name": "LabJack T7 Plugin",
+    "author": "Kempton Burton",
+    "description": "Plugin to connect to a Labjack T7 device.",
+    "repo": "voit-systems/dartwic-labjack-plugin"
   }
 ]

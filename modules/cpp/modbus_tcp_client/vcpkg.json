@@ -1,5 +1,0 @@
-{
-  "name" : "modbus-tcp-client-dartwic-module",
-  "version-string" : "1.0.0",
-  "dependencies" : [ "yaml-cpp", "libmodbus" ]
-}
