@@ -1,5 +1,5 @@
 ---
-updated: 2026-04-21T22:50
+updated: 2026-04-21T22:53
 created: 2026-03-15T23:16
 ---
 
@@ -102,8 +102,7 @@ v1.0 includes (so far):
 ![](_attachments/Pasted%20image%2020260421225031.png)
 
 
-![[Pasted image 20260326232847.png]]
-
+![](_attachments/Pasted%20image%2020260421225056.png)
 
 ### Settings
 
@@ -111,37 +110,33 @@ v1.0 includes (so far):
 
 ### Updated Channel Searcher
 
-![[Pasted image 20260326010830.png]]
-
+![](_attachments/Pasted%20image%2020260421225109.png)
 ### Dataframe Searcher
 
-![[Pasted image 20260326010950.png]]
+![](_attachments/Pasted%20image%2020260421225127.png)
 
-![[Pasted image 20260326011006.png]]
+![](_attachments/Pasted%20image%2020260421225139.png)
 
 ### New Schematic Layout
 
 Talk about easier schematic setups for adding channels to nodes and making button and valves.
-
-![[Pasted image 20260326011039.png]]
-
+![](_attachments/Pasted%20image%2020260421225151.png)
 
 ### Telemetry Viewer
 
-![[Pasted image 20260326011105.png]]
 
-![[Pasted image 20260326011114.png]]
+![](_attachments/Pasted%20image%2020260421225202.png)
 
 ### Tasks
 
-![[Pasted image 20260326011146.png]]
+![](_attachments/Pasted%20image%2020260421225224.png)
 
-![[Pasted image 20260326011317.png|428]]
+![](_attachments/Pasted%20image%2020260421225235.png)
 
-![[Pasted image 20260326011259.png|431]]
+![](_attachments/Pasted%20image%2020260421225247.png)
 
-![[Pasted image 20260326011355.png]]
 
+![](_attachments/Pasted%20image%2020260421225308.png)
 #  Module API Changes & Packages
 ---
 
@@ -157,9 +152,9 @@ Talk about easier schematic setups for adding channels to nodes and making butto
 
 ### Python Client
 
-![[Pasted image 20260326011435.png|519]]
+![](_attachments/Pasted%20image%2020260421225322.png)
 
-![[Pasted image 20260326011452.png|551]]
+![](_attachments/Pasted%20image%2020260421225330.png)
 
 ### React Client
 
