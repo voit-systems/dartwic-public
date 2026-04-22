@@ -1,5 +1,5 @@
 ---
-updated: 2026-04-02T02:41
+updated: 2026-04-21T22:50
 created: 2026-03-15T23:16
 ---
 
@@ -99,7 +99,8 @@ v1.0 includes (so far):
 
 ### Light Mode
 
-![[Pasted image 20260326232828.png]]
+![](_attachments/Pasted%20image%2020260421225031.png)
+
 
 ![[Pasted image 20260326232847.png]]
 
