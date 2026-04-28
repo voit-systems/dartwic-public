@@ -2,8 +2,43 @@
   {
     "version": "1.0.0-pre_release",
     "channel": "pre-release",
-    "releasedAt": "2026-04-28T03:52:02.787Z",
+    "releasedAt": "2026-04-28T05:35:39.681Z",
     "artifacts": [
+      {
+        "artifactId": "engine",
+        "version": "1.0.0-pre_release",
+        "minimumVersions": {
+          "minEngineVersion": "1.0.0-pre_release"
+        },
+        "compatibility": {
+          "engineVersion": "1.0.0-pre_release",
+          "interfaceVersion": "1.0.0-pre_release"
+        }
+      },
+      {
+        "artifactId": "interface-desktop",
+        "version": "1.0.0-pre_release",
+        "minimumVersions": {
+          "minInterfaceVersion": "1.0.0-pre_release",
+          "minEngineVersion": "1.0.0-pre_release"
+        },
+        "compatibility": {
+          "engineVersion": "1.0.0-pre_release",
+          "interfaceVersion": "1.0.0-pre_release"
+        }
+      },
+      {
+        "artifactId": "interface-webserver",
+        "version": "1.0.0-pre_release",
+        "minimumVersions": {
+          "minInterfaceVersion": "1.0.0-pre_release",
+          "minEngineVersion": "1.0.0-pre_release"
+        },
+        "compatibility": {
+          "engineVersion": "1.0.0-pre_release",
+          "interfaceVersion": "1.0.0-pre_release"
+        }
+      },
       {
         "artifactId": "engine-plugin-sdk",
         "version": "0.1.0",
@@ -20,6 +55,28 @@
         "version": "0.2.0",
         "minimumVersions": {
           "minInterfaceVersion": "1.0.0-pre_release"
+        },
+        "compatibility": {
+          "engineVersion": "1.0.0-pre_release",
+          "interfaceVersion": "1.0.0-pre_release"
+        }
+      },
+      {
+        "artifactId": "react-client",
+        "version": "1.0.0",
+        "minimumVersions": {
+          "minEngineVersion": "1.0.0-pre_release"
+        },
+        "compatibility": {
+          "engineVersion": "1.0.0-pre_release",
+          "interfaceVersion": "1.0.0-pre_release"
+        }
+      },
+      {
+        "artifactId": "python-client",
+        "version": "1.0.0",
+        "minimumVersions": {
+          "minEngineVersion": "1.0.0-pre_release"
         },
         "compatibility": {
           "engineVersion": "1.0.0-pre_release",
