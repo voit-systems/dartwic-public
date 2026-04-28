@@ -9,9 +9,9 @@ Useful starting points:
 
 If you are building plugins, start with:
 
-1. `docs/Docs/Plugins/Creating a Plugin.md`
-2. `docs/Docs/Plugins/Interface Plugin API.md`
-3. `docs/Docs/Plugins/Engine Plugin API.md`
+1. `docs/Plugins/latest/Creating a Plugin.md`
+2. `docs/Plugins/latest/Interface Plugin API.md`
+3. `docs/Plugins/latest/Engine Plugin API.md`
 
 Current plugin compatibility versions:
 
