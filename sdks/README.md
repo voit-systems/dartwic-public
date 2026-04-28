@@ -1,10 +1,27 @@
-# Software Development Kits
+# SDKs
 
+DARTWIC ships starter SDK content for both plugin sides.
 
+Main entry points:
 
-Software Development Kits for embedding functionality into DARTWIC. Includes creating C++ device drivers via the Modules SDK.
+- interface plugin starter
+- engine plugin starter
+- combined example package
 
+Current compatibility targets:
 
+- `interface_plugins_api_version: 2`
+- `engine_plugins_api_version: 2`
 
-Plans to create ways to add custom pages and schematic nodes to the interface.
+Use the interface starter if you are building:
 
+- settings pages
+- task editors
+- resource pages
+- schematic nodes
+
+Use the engine starter if you are building:
+
+- native modules
+- drivers
+- runtime integrations
