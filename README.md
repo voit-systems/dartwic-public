@@ -5,7 +5,7 @@ Public docs, SDK starters, demos, and plugin-facing guidance for DARTWIC.
 Useful starting points:
 
 - [docs](./docs/README.md)
-- [sdks](./sdks/README.md)
+- [demos](./demos/README.md)
 
 If you are building plugins, start with:
 
