@@ -1,12 +1,10 @@
 ---
 created: 2026-04-21T18:51
-updated: 2026-04-27T16:39
+updated: 2026-04-28T17:57
 ---
-# React Client
-
 The DARTWIC React client is versioned independently from the engine.
 
-## Compatibility
+# Compatibility
 
 - Declares a minimum supported DARTWIC Engine version with `minEngineVersion`
 - Declares a minimum supported protocol version with `minProtocolVersion` when needed

@@ -1,5 +1,7 @@
-# Compatibility
-
+---
+created: 2026-04-27T21:46
+updated: 2026-04-28T17:57
+---
 DARTWIC compatibility is intentionally simple at the public level:
 
 - Engine plugins declare `minEngineVersion`.
@@ -9,12 +11,12 @@ DARTWIC compatibility is intentionally simple at the public level:
 
 That means a plugin or client should keep working on newer DARTWIC releases unless a real breaking contract change occurs.
 
-## Examples
+# Examples
 
 - `minEngineVersion: 1.0.0` means the plugin or client works with DARTWIC Engine `1.0.0` and newer.
 - `minInterfaceVersion: 1.1.0` means the interface plugin needs DARTWIC Interface `1.1.0` or newer.
 - `minProtocolVersion: 2` is only needed when the engine/client message contract breaks.
 
-## Internal compatibility
+# Internal compatibility
 
 DARTWIC still tracks protocol and plugin API versions internally. Those values are mainly for runtime safety and release engineering, not the main public compatibility story.

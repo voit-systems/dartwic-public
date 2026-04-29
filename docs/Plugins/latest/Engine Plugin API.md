@@ -1,16 +1,14 @@
 ---
 created: 2026-03-31T23:14
-updated: 2026-04-26T00:00
+updated: 2026-04-28T17:57
 ---
-# Engine Plugin API
-
 This page describes the engine-side plugin contract.
 
 Current version:
 
 - `engine_plugins_api_version: 2`
 
-## What engine plugins do
+# What engine plugins do
 
 Engine plugins run in the DARTWIC engine process.
 
@@ -21,7 +19,7 @@ Use them for:
 - runtime logic
 - native integrations
 
-## Minimum engine package layout
+# Minimum engine package layout
 
 ```text
 plugin/
@@ -34,7 +32,7 @@ plugin/
       default_parameters.json
 ```
 
-## Manifest
+# Manifest
 
 ```json
 {
@@ -48,7 +46,7 @@ plugin/
 }
 ```
 
-## Binary contract
+# Binary contract
 
 The engine loads a native binary and expects an exported:
 
@@ -62,7 +60,7 @@ Preferred names:
 - macOS: `bin/lib<pluginId>.dylib`
 - Linux: `bin/lib<pluginId>.so`
 
-## Main C++ integration points
+# Main C++ integration points
 
 Engine plugins inherit from:
 
@@ -84,7 +82,7 @@ virtual DARTWIC::Modules::BaseModule* createModule(
 );
 ```
 
-## Module types
+# Module types
 
 Use `getModuleTypes()` to expose one or more module types.
 
@@ -94,7 +92,7 @@ Typical metadata:
 - `config_path`
 - `default_parameters_path`
 
-## Compatibility
+# Compatibility
 
 Engine plugins must match:
 
@@ -104,7 +102,7 @@ Current value:
 
 - `2`
 
-## Practical notes
+# Practical notes
 
 - build Release binaries, not Debug binaries
 - keep interface plugin files separate from engine files even when shipping both

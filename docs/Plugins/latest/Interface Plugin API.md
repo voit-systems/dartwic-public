@@ -1,16 +1,14 @@
 ---
 created: 2026-03-31T23:14
-updated: 2026-04-27T00:59
+updated: 2026-04-28T17:57
 ---
-# Interface Plugin API
-
 This page describes the current DARTWIC interface plugin API.
 
 Current version:
 
 - `interface_plugins_api_version: 2`
 
-## What v2 plugins can register
+# What v2 plugins can register
 
 - `SettingsPage`
 - `PluginSettingsPage`
@@ -21,7 +19,7 @@ Current version:
 - `resources`
 - `schematicNodes`
 
-## Runtime contract
+# Runtime contract
 
 The built plugin must register on:
 
@@ -31,7 +29,7 @@ window.__dartwicPluginRegistry__
 
 The runtime entry should register a `createPlugin(hostApi)` function under your plugin id.
 
-## Minimum example
+# Minimum example
 
 ```jsx
 export const pluginMeta = {
@@ -81,7 +79,7 @@ export function createPlugin(hostApi) {
 }
 ```
 
-## Host API
+# Host API
 
 `createPlugin(hostApi)` receives:
 
@@ -111,7 +109,7 @@ Common helpers include:
 - `ManualRefreshButton`
 - `convertChannelValuePathToChannelName`
 
-## Styling
+# Styling
 
 Use plain Tailwind classes directly.
 
@@ -128,7 +126,7 @@ Use `hostApi.sdk.styling.cn` for conditional classes.
 
 Plugins can also define additional theme variables or semantic colors, but normal class strings are still the main authoring path.
 
-## Task editor API
+# Task editor API
 
 Task editors are registered under `taskEditors`.
 
@@ -165,7 +163,7 @@ Use `useTaskEditorBridge(taskEditor, {...})` to provide:
 - `saveLabel`
 - `cancelLabel`
 
-## Resource registration
+# Resource registration
 
 Plugins can register first-class resources.
 
@@ -193,7 +191,7 @@ Directory-style resources can also define:
 - `resource_on_delete_function`
 - `context_config`
 
-## Schematic node registration
+# Schematic node registration
 
 Plugins can register schematic nodes with:
 
@@ -222,7 +220,7 @@ schematicNodes: [
 ]
 ```
 
-## Compatibility
+# Compatibility
 
 Interface plugins must match the interface runtime’s `interface_plugins_api_version`.
 
@@ -230,7 +228,7 @@ Current value:
 
 - `2`
 
-## Migration notes from older interface plugins
+# Migration notes from older interface plugins
 
 If you have older plugin code:
 

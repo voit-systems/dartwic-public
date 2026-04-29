@@ -1,11 +1,8 @@
 ---
-updated: 2026-04-22T19:56
+updated: 2026-04-28T17:57
 created: 2026-03-15T23:16
 ---
 
-# Getting Started
-
-## What DARTWIC Is
 # What is DARTWIC?
 Data Acquisition for Rocket Testing With Integrated Controls.
 DARTWIC is a collection of software projects, all put together to create a unified controls and data acquisition platform.
@@ -23,4 +20,3 @@ This includes, but is not limited to: satellites, spacecraft, engines, habitats,
 - Read [[APIs]] for external integration surfaces.
 - Read [[01 - Projects/DARTWIC/Public Docs/Clients]] if you are connecting from Python or JavaScript.
 - Read [[Modules]] if you are extending DARTWIC with custom device drivers.
-

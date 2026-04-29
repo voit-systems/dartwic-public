@@ -1,22 +1,20 @@
 ---
 created: 2026-04-27T00:19
-updated: 2026-04-27T00:58
+updated: 2026-04-28T17:57
 ---
-# Creating a Plugin
 
 This is the shortest path to a working DARTWIC plugin package.
 
-## Pick the plugin shape
+# Pick the plugin shape
 
 Use one of these:
-
 - engine only
 - interface only
 - both engine and interface
 
 If you are building custom UI, you want an interface plugin.
 
-## Minimum package layout
+# Minimum package layout
 
 ```text
 plugin.json
@@ -39,7 +37,7 @@ plugin/
         <plugin binary>
 ```
 
-## `plugin.json`
+# `plugin.json`
 
 Current interface plugin API:
 
@@ -55,7 +53,7 @@ Current interface plugin API:
 }
 ```
 
-## Interface plugin source
+# Interface plugin source
 
 Recommended source shape:
 
@@ -95,7 +93,7 @@ import { createPlugin, pluginMeta } from "./index.jsx";
 })();
 ```
 
-## Styling
+# Styling
 
 Write plain Tailwind classes directly.
 
@@ -109,7 +107,7 @@ Use the same semantic classes the app uses:
 
 You do not need a separate styling DSL.
 
-## What an interface plugin can register
+# What an interface plugin can register
 
 - settings pages
 - module config pages
@@ -118,7 +116,7 @@ You do not need a separate styling DSL.
 - resource pages
 - schematic nodes
 
-## Task editors in v2
+# Task editors in v2
 
 Task editors now use a host-owned header.
 
@@ -151,7 +149,7 @@ export function createPlugin(hostApi) {
 }
 ```
 
-## Build output
+# Build output
 
 Your build should produce:
 
@@ -161,7 +159,7 @@ ui/index.js
 
 That file is what the DARTWIC interface loads at runtime.
 
-## Good next reads
+# Good next reads
 
 - `Interface Plugin API`
 - `Engine Plugin API`

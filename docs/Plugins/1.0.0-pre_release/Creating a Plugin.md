@@ -1,6 +1,6 @@
 ---
 created: 2026-04-27T00:19
-updated: 2026-04-27T00:58
+updated: 2026-04-28T17:10
 ---
 # Creating a Plugin
 
@@ -8,8 +8,8 @@ This is the shortest path to a working DARTWIC plugin package.
 
 ## Pick the plugin shape
 
+hello
 Use one of these:
-
 - engine only
 - interface only
 - both engine and interface
