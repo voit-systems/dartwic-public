@@ -2,9 +2,7 @@
   {
     "version": "1.0.0-pre_release",
     "channel": "pre-release",
-    "releasedAt": "2026-05-25T04:20:38.286Z",
-    "sourceCommit": "5d490bda40d728249b40dc80f9f64137b0e631cc",
-    "sourceTag": "v1.0.0-pre_release",
+    "releasedAt": "2026-05-25T04:43:38.103Z",
     "artifacts": [
       {
         "artifactId": "engine",
