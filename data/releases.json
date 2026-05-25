@@ -2,7 +2,9 @@
   {
     "version": "1.0.0-pre_release",
     "channel": "pre-release",
-    "releasedAt": "2026-04-28T06:43:56.660Z",
+    "releasedAt": "2026-05-25T04:20:38.286Z",
+    "sourceCommit": "5d490bda40d728249b40dc80f9f64137b0e631cc",
+    "sourceTag": "v1.0.0-pre_release",
     "artifacts": [
       {
         "artifactId": "engine",
@@ -20,62 +22,6 @@
         "version": "1.0.0-pre_release",
         "minimumVersions": {
           "minInterfaceVersion": "1.0.0-pre_release",
-          "minEngineVersion": "1.0.0-pre_release"
-        },
-        "compatibility": {
-          "engineVersion": "1.0.0-pre_release",
-          "interfaceVersion": "1.0.0-pre_release"
-        }
-      },
-      {
-        "artifactId": "interface-webserver",
-        "version": "1.0.0-pre_release",
-        "minimumVersions": {
-          "minInterfaceVersion": "1.0.0-pre_release",
-          "minEngineVersion": "1.0.0-pre_release"
-        },
-        "compatibility": {
-          "engineVersion": "1.0.0-pre_release",
-          "interfaceVersion": "1.0.0-pre_release"
-        }
-      },
-      {
-        "artifactId": "engine-plugin-sdk",
-        "version": "0.1.0",
-        "minimumVersions": {
-          "minEngineVersion": "1.0.0-pre_release"
-        },
-        "compatibility": {
-          "engineVersion": "1.0.0-pre_release",
-          "interfaceVersion": "1.0.0-pre_release"
-        }
-      },
-      {
-        "artifactId": "interface-plugin-sdk",
-        "version": "0.2.0",
-        "minimumVersions": {
-          "minInterfaceVersion": "1.0.0-pre_release"
-        },
-        "compatibility": {
-          "engineVersion": "1.0.0-pre_release",
-          "interfaceVersion": "1.0.0-pre_release"
-        }
-      },
-      {
-        "artifactId": "react-client",
-        "version": "1.0.0",
-        "minimumVersions": {
-          "minEngineVersion": "1.0.0-pre_release"
-        },
-        "compatibility": {
-          "engineVersion": "1.0.0-pre_release",
-          "interfaceVersion": "1.0.0-pre_release"
-        }
-      },
-      {
-        "artifactId": "python-client",
-        "version": "1.0.0",
-        "minimumVersions": {
           "minEngineVersion": "1.0.0-pre_release"
         },
         "compatibility": {
