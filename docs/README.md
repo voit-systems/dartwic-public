@@ -16,3 +16,14 @@ Current plugin compatibility versions:
 
 - interface plugins: `2`
 - engine plugins: `2`
+
+## Repo Layout
+
+Versioned docs live under `docs/latest/` and `docs/<version>/`.
+
+- `docs/latest/`
+  live docs snapshot mirrored from the staged authoring tree
+- `docs/<version>/`
+  frozen docs for a release like `1.0.0-pre_release`
+- `releases/`
+  release notes and attachments, kept separate from docs pages
