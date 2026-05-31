@@ -2,14 +2,12 @@
   {
     "version": "1.0.1-pre_release",
     "channel": "pre-release",
-    "releasedAt": "2026-05-31T23:18:31.330Z",
+    "releasedAt": "2026-05-31T23:27:33.454Z",
     "artifacts": [
       {
         "artifactId": "engine",
         "version": "1.0.1-pre_release",
-        "minimumVersions": {
-          "minEngineVersion": "1.0.1-pre_release"
-        },
+        "minimumVersions": {},
         "compatibility": {
           "engineVersion": "1.0.1-pre_release",
           "interfaceVersion": "1.0.0-pre_release"
