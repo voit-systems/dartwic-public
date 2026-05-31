@@ -15,7 +15,13 @@
           "interfaceVersion": "1.0.0-pre_release"
         }
       }
-    ]
+    ],
+    "source": {
+      "repository": "DARTWIC",
+      "branch": "pre-1.0-release-preps",
+      "tag": "v1.0.1-pre_release-engine",
+      "commit": "6a487137564abf685eec66f83de7a26d82ff01aa"
+    }
   },
   {
     "version": "1.0.0-pre_release",
