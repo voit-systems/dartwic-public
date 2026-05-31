@@ -2,7 +2,7 @@
   {
     "version": "1.0.1-pre_release",
     "channel": "pre-release",
-    "releasedAt": "2026-05-31T23:30:40.610Z",
+    "releasedAt": "2026-05-31T23:33:11.346Z",
     "artifacts": [
       {
         "artifactId": "engine",
@@ -18,7 +18,7 @@
       "repository": "DARTWIC",
       "branch": "pre-1.0-release-preps",
       "tag": "v1.0.1-pre_release-engine",
-      "commit": "6a487137564abf685eec66f83de7a26d82ff01aa"
+      "commit": "1b3fb7ee8baf0a746995cd3148aec727c732f571"
     }
   },
   {
