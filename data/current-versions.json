@@ -1,5 +1,5 @@
 {
-  "engine": "1.0.0-pre_release",
+  "engine": "1.0.1-pre_release",
   "interface-desktop": "1.0.0-pre_release",
   "interface-webserver": "1.0.0-pre_release",
   "engine-plugin-sdk": "0.1.0",
