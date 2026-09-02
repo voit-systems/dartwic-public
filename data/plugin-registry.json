@@ -12,5 +12,12 @@
     "author": "Kempton Burton",
     "description": "Plugin to connect to a Labjack T7 device.",
     "repo": "voit-systems/dartwic-labjack-plugin"
+  },
+  {
+    "id": "checklists",
+    "name": "DARTWIC Checklists",
+    "author": "VOIT Systems",
+    "description": "First-party collaborative Markdown checklists and DARTWIC interface chips.",
+    "repo": "voit-systems/dartwic-checklists-plugin"
   }
 ]
